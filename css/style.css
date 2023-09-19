@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Styles for the modal */
+.modal-header {
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal-body {
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px; /* Adjust the width as needed */
+  width: 90%; /* Ensure responsiveness on smaller screens */
+  text-align: center;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px 30px;
+}
+
+/* Close button for the modal */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
